@@ -25,7 +25,7 @@ RUN pip install -r requirements.txt
 
 # Ensure Git LFS is installed
 RUN apt-get update && apt-get install -y git-lfs
-RUN git lfs install
+RUN git lfs install --force
 
 # Pull the large files with Git LFS
 RUN git lfs pull
